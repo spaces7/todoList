@@ -3,7 +3,7 @@ $("ul").on("click", "li", function(){
 })
 
 $("ul").on("click", " li span", function(){
-    $(this).parent().fadeOut(500, function(){
+    $(this).parent().fadeOut(400, function(){
         this.remove();
     })
     $(this).stopPropagation();
