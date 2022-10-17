@@ -1,0 +1,106 @@
+#container {
+    background: #f7f7f7;
+    width: 360px;
+    margin: 100px auto;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.select {
+    color: gray;
+    text-decoration: line-through;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    margin: 0;
+    background: steelblue;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 10px 20px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    background: #f7f7f7;
+    color: steelblue;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    padding: 13px 13px 13px 20px;
+}
+
+input:focus {
+    background: white;
+    border: 3px solid steelblue; 
+}
+
+li {
+    height: 40px;
+    line-height: 40px;
+}
+
+span {
+    color: white;
+    background: red;
+    height: 40px;
+    text-align: center;
+    width: 0;
+    display: inline-block;
+    opacity: 0;
+    transition: linear 200ms;
+    margin-right: 20px;
+}
+
+li:hover span{
+    width: 40px;
+    opacity: 1.0;
+}
+
+li:nth-child(2n) {
+    background: white;
+}
+
+
+.fa-feather-alt {
+    float: right;
+}
+
+
+body {
+    background: linear-gradient(194deg, #b07dc6, #2980E9, rgba(202, 32, 32, 0.733), rgba(179, 10, 103, 0.733));
+    background-size: 400% 400%;
+
+    -webkit-animation: gradient 30s ease infinite;
+    -moz-animation: gradient 30s ease infinite;
+    animation: gradient 30s ease infinite;
+}
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.fa-plus {
+	background-image: -webkit-linear-gradient(194deg, #fff, #2980E9);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
